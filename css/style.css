@@ -10,7 +10,8 @@
                 -.4rem -.4rem 1rem #cc0188;
     --box-shadow-inset:.4rem .4rem 1rem #5e003e inset,
                       -.4rem -.4rem 1rem #cf008a inset;
-   
+    --box-shadow-text:.4rem .4rem 1rem #16000f,
+                      -.4rem -.4rem 1rem #be0380;
 }
 
 *{
@@ -41,6 +42,8 @@ body.active{
     --border:.1rem solid rgba(0,0,0,.4);
     --box-shadow:.4rem .4rem 1rem #111,
                 -.4rem -.4rem 1rem #333;
+     --box-shadow-text:.4rem .4rem 1rem rgb(0, 0, 0),
+                -.4rem -.4rem 1rem rgb(54, 52, 52);
     --box-shadow-inset:.4rem .4rem 1rem #111 inset,
                       -.4rem -.4rem 1rem #333 inset;
 }
@@ -462,6 +465,68 @@ section{
     opacity: 1;
 }
 
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.pricing .box-container .box{
+    height: fit-content;
+    border-radius: .5rem;
+    overflow:hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border:1rem solid transparent;
+    border-radius: 2rem;
+}
+
+
+
+
+.pricing .box-container .box h3{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+.pricing .box-container .box span{
+  
+    color: var(--green);
+    text-align: center;
+}
+.pricing .box-container .box ul{
+font-size: 1.9rem;
+padding-left: 2rem;
+margin-top: 3rem;
+
+}
+#plan{
+    font-size: 1.5rem;
+    font-size: 2rem;
+}
+.pricing .box-container .box .ul li{
+    margin-bottom: 1rem;
+    color: var(--black);
+    
+}
+.pricing .box-container .box a{
+    font-weight: bold;
+  color:var(--green);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    border-radius: 30rem;
+    margin-bottom: 3rem;
+}
+.contact .links{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
 .contact form{
     margin:1rem auto;
     max-width: 70rem;
@@ -489,6 +554,26 @@ section{
 
 .contact form .box:focus{
     box-shadow: var(--box-shadow-inset);
+}
+
+.contact .share{
+    position: relative;
+    top: 10rem;
+    border-radius: 3rem;
+    box-shadow: var(--box-shadow);
+    padding:1rem;
+   
+}
+
+.contact .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: var(--box-shadow);
+    margin:.5rem;
+    font-size: 2rem;
+    color:var(--black);
+    border-radius: 10rem;
 }
 
 .credits{
