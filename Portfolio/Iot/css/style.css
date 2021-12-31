@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --green:rgb(39, 174, 96);
+    --gold:#ffd700;
+    --black:#e4e4e4;
+    --light-color:rgb(255, 255, 255);
+    --bg-color:#171717;
+    --border:.1rem solid rgba(255, 255, 255, 0.2);
+
+
+
+    /* --box-shadow:.4rem .4rem 1rem #4b0132,
+                -.4rem -.4rem 1rem #cc0188;
+    --box-shadow-inset:.4rem .4rem 1rem #5e003e inset,
+                      -.4rem -.4rem 1rem #cf008a inset; */
+    --box-shadow-text:.4rem .4rem 1rem rgb(0, 0, 0),
+                      -.4rem -.4rem 1rem rgb(143, 142, 142);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+   
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg-color);
+    
+}
+section{
+    min-height: 100vh;
+    padding:2rem;
+}
+.header{
+ width: 100%;
+position: fixed;
+vertical-align: middle;
+padding: 2rem;
+background-color: var(--bg-color);
+}
+
+.logo{
+    display: inline-flex;
+    font-size: 5rem;
+    color: var(--gold);
+    text-shadow: var(--box-shadow-text)
+}
+.header .nav .navlink{
+    float: right;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: 2rem;
+    
+}
+.header .nav .navlink a{
+   font-size: 2rem;
+   padding-right: 1.5rem;
+    color: var(--black);
+}
+.home{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+}
+
+.heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    margin-top: 10rem;
+}
+.home .row{
+    display: inline-flex;
+    width: 100%;
+    gap:2rem;
+}
+.home .row img{
+    display: inline-flex;
+    width: 50%;
+}
+.home .content{
+     display:flex;
+    font-size: 2rem;
+    width: 50%;
+}
+.home .content h3{
+    font-size: 4rem;
+    color:var(--black);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.home .content p{
+    font-size: 2rem;
+    color:var(--black);
+    padding-bottom: .5rem;
+}

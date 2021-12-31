@@ -150,11 +150,31 @@ section{
     background: var(--bg-color);
     display: none;
 }
-
+del {
+    margin-left: 1rem;
+    text-decoration: line-through;
+    color: rgb(255, 0, 0)
+  }
+  
 #menu-btn:hover{
     color:var(--green);
     box-shadow: var(--box-shadow-inset);
 }
+
+#sale{
+   
+    height: fit-content;
+    background-color: #2979ff;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    opacity: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
 
 #theme-toggler{
     position: fixed;
@@ -295,8 +315,8 @@ section{
 }
 
 .about .row .content h3 span{
-    color:var(--bg-color);
-    text-shadow: var(--box-shadow);
+    color:var(--green);
+
 }
 
 .about .row .content p{
