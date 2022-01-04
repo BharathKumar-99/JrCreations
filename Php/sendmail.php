@@ -12,7 +12,7 @@
       $phone = $_POST['tel'];
       $mes =$_POST['msg'];
       $sub=$_POST['sub'];
-         $to = "bharthblaster@gmail.com";
+         $to = "jr.webcreations9363@gmail.com";
          
          $subject = $sub;
          

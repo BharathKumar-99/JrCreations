@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url("css/style.css");
 :root{
     --green:#27ae60;
     --black:#e4e4e4;
@@ -94,15 +94,19 @@ section{
     padding:2rem;
     text-align: center;
 }
-
-.header .user img{
-    margin:1rem 0;
+.circle {
+    
+    border-radius: 100%;
+    display: flex;
+    margin:auto;
     border:1rem solid transparent;
     border-radius: 50%;
     height: 18rem;
     width: 18rem;
     box-shadow: var(--box-shadow);
-}
+  }
+
+
 
 .header .user h3{
     color:var(--black);
@@ -207,10 +211,10 @@ del {
 
 .home .content h3{
     font-size: 7rem;
-    color:var(--bg-color);
+    color:var(--black);
     line-height: 1.1;
     text-transform: uppercase;
-    text-shadow: var(--box-shadow);
+    
 
     -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 10s; /* Firefox < 16 */
@@ -648,7 +652,30 @@ margin-top: 3rem;
     #menu-btn{
         display: initial;
     }
-
+    .circle {
+    
+        border-radius: 100%;
+        display: flex;
+        margin:auto;
+        border:1rem solid transparent;
+        border-radius: 50%;
+        height: 18rem;
+        width: 18rem;
+        box-shadow: var(--box-shadow);
+      }
+      #sale{
+   
+        height: fit-content;
+        background-color: #2979ff;
+        width: 100%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        display: flex;
+        opacity: 100%;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
 }
 
 @media (max-width:450px){
@@ -661,7 +688,30 @@ margin-top: 3rem;
         width:100%;
         border-right: 0;
     }
-
+    .circle {
+    
+        border-radius: 100%;
+        display: flex;
+        margin:auto;
+        border:1rem solid transparent;
+        border-radius: 50%;
+        height: 18rem;
+        width: 18rem;
+        box-shadow: var(--box-shadow);
+      }
+      #sale{
+   
+        height: fit-content;
+        background-color: #2979ff;
+        width: 100%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        display: flex;
+        opacity: 100%;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
 }
 
 
